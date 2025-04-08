@@ -1,0 +1,247 @@
+:root {
+    /* Colors */
+	--color-neutral-95: oklch(95% 0.005 250);
+	--color-neutral-90: oklch(90% 0.01 250);
+	--color-neutral-80: oklch(80% 0.015 250);
+	--color-neutral-70: oklch(70% 0.02 250);
+	--color-neutral-60: oklch(60% 0.025 250);
+	--color-neutral-50: oklch(50% 0.03 250);
+	--color-neutral-40: oklch(40% 0.035 250);
+	--color-neutral-30: oklch(30% 0.035 250);
+	--color-neutral-20: oklch(20% 0.03 250);
+	--color-neutral-10: oklch(10% 0.02 250);
+
+    /* blues */
+	--color-blue-95: oklch(96% 0.03 240);
+	--color-blue-90: oklch(92% 0.06 240);
+	--color-blue-80: oklch(84% 0.12 240);
+	--color-blue-70: oklch(75% 0.18 240);
+	--color-blue-60: oklch(66% 0.22 250);
+	--color-blue-50: oklch(62% 0.24 250);
+	--color-blue-40: oklch(50% 0.22 250);
+	--color-blue-30: oklch(40% 0.18 250);
+	--color-blue-20: oklch(30% 0.14 250);
+	--color-blue-10: oklch(20% 0.08 250);
+
+    /* Font families */
+    --font-crimson: "Crimson Text", serif;
+    --font-inter: "Inter", serif;
+    
+    /* Font weights */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    
+    /* Font styles */
+    --style-normal: normal;
+    --style-italic: italic;
+}
+
+html {
+	font: "Crimson Text", serif;
+	counter-reset: figure;
+	max-width: min(50vw, 80em);
+	margin: 0 auto;
+}
+
+/* Fonts */
+/* Crimson Text utility classes */
+.crimson-text-regular {
+    font-family: var(--font-crimson);
+    font-weight: var(--weight-regular);
+    font-style: var(--style-normal);
+  }
+  
+  .crimson-text-semibold {
+    font-family: var(--font-crimson);
+    font-weight: var(--weight-semibold);
+    font-style: var(--style-normal);
+  }
+  
+  .crimson-text-regular-italic {
+    font-family: var(--font-crimson);
+    font-weight: var(--weight-regular);
+    font-style: var(--style-italic);
+  }
+  
+  .crimson-text-semibold-italic {
+    font-family: var(--font-crimson);
+    font-weight: var(--weight-semibold);
+    font-style: var(--style-italic);
+  }
+  
+  /* Inter Text utility classes */
+  .inter-text-regular {
+    font-family: var(--font-inter);
+    font-optical-sizing: var(--optical-sizing-auto);
+    font-weight: var(--weight-regular);
+    font-style: var(--style-normal);
+  }
+  
+  .inter-text-medium {
+    font-family: var(--font-inter);
+    font-optical-sizing: var(--optical-sizing-auto);
+    font-weight: var(--weight-medium);
+    font-style: var(--style-normal);
+  }
+  
+  .inter-text-bold {
+    font-family: var(--font-inter);
+    font-optical-sizing: var(--optical-sizing-auto);
+    font-weight: var(--weight-bold);
+    font-style: var(--style-normal);
+  }
+
+/* Mode Switcher */
+
+.color-scheme {
+	font-family: var(--font-inter);
+	font-size: .85em;
+	position: absolute;
+	display: inline-flex;
+	top: 1em;
+	right: 1em;
+	gap: .5em;
+	cursor: pointer;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+    font-family: var(--font-crimson);
+    font-weight: var(--weight-regular);
+	line-height: 1.1;
+	text-wrap: balance;
+}
+
+h4, h5, h6 {
+    font-family: var(--font-inter);
+    font-weight: var(--weight-semibold);
+	line-height: 1.1;
+	text-wrap: balance;
+}
+
+h1, h2 {
+	padding-bottom: .2em;
+}
+
+h1 {
+	margin-block: 1em .5rem;
+	font-size: clamp(2.5em, 150% + 2vh + 2vw, 10vmin);
+	font-weight: 800;
+
+	small {
+		display: block;
+		width: fit-content;
+		padding: .5em .5em;
+		margin-inline: auto;
+        margin-bottom: 2%;
+		color: var(--color-purple-40);
+        background-color: var(--color-purple-95);
+		font-size: 25%;
+        border-radius: 6px;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+}
+
+h2 {
+	font-size: 220%;
+    border-bottom: 1px solid var(--color-neutral-70);
+}
+
+h3 {
+	font-size: 150%;
+    margin-top: 1.5em;
+}
+
+/* Lists */
+
+ul, ol {
+	padding-inline-start: 2em;
+    font-family: var(--font-inter);
+}
+
+li {
+    line-height: 1.3em;
+
+	&::marker {
+		color: var(--color-blue-40);
+	}
+
+	+ li {
+		margin-top: .5em;
+	};
+}
+
+/* Sectioning elements */
+
+header {
+	padding-block: 1em;
+	text-align: center;
+}
+
+body {
+	padding: 5rem 2rem;
+}
+
+p {
+    font-family: var(--font-inter);
+    line-height: 1.3em;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	margin-top: 4rem;
+	border-top: 1px solid var(--color-neutral-60);
+	padding: 1rem 0;
+}
+
+a {
+	font-family: var(--font-inter);
+	color: var(--color-blue-40);
+	text-decoration: none;
+}
+
+.current {
+	color: var(--color-blue-20);
+	font-weight: 600;
+}
+
+/* Figures */
+
+figure {
+    max-width: 100%;
+	margin-inline: -.5em;
+    margin-top: 4rem;
+	text-align: center;
+	background: white;
+
+	> figcaption {
+		font: 500 75% var(--font-sans);
+		background: var(--color-neutral-95);
+		padding: .5rem;
+		counter-increment: figure;
+		text-align: left;
+
+		&::before {
+			content: "Figure " counter(figure) ": ";
+			font-weight: bold;
+			color: var(--color-neutral-40);
+		}
+
+		a:not(:hover, :focus, :active) {
+			color: inherit;
+			text-decoration: underline;
+			text-decoration-color: color-mix(in lab, currentColor, transparent 70%);
+		}
+	}
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

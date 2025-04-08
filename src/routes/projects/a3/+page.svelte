@@ -1,0 +1,158 @@
+<header>
+    <h1>
+        <small class="inter-text-bold">Assignment 3</small>
+        Visualization Critique & Redesign
+    </h1>
+
+    <p>
+        <strong>Marissa Cui</strong> — <em>marissac@mit.edu</em>
+    </p>
+</header>
+
+<main>
+    <section>
+        <h2>Reading & Critique</h2>
+
+        <figure>
+            <img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+        </figure>
+
+        <h3>
+            Insights about the data/visualization
+        </h3>
+
+        <ul>
+            <li>The visualization is depicting the number of covid cases (on a 7-day average) from Jan 2020 to Jan 2022.</li>
+            <li>The legend shows us what the width means by telling us what the width looks like for 150K cases.</li>
+            <li>The dotted axes mark the months throughout the year.</li>
+            <li>The winter months (Dec-Feb) really stand out because they have the widest parts of the graph. You can infer that cases in 2022 will keep growing based on how the slope is trending upward.</li>
+            <li>Besides Jan/Feb of 2020, when the first cases are just appearing, the next lowest trough is June/July of 2022.</li>
+            <li>June was a lull in both 2020 and 2021, while January saw big spikes in both years after the first cases showed up.</li>
+            <li>It's interesting that despite vaccinations having started in spring 2021, the Sept peak rivals the previous winter, though it appears thinner and visibly smoother. This pattern could potentially be attributed to more prevalent testing, although that doesn't explain the smoothness of the curve.</li>
+           </ul>
+
+        <h3>
+            Design Critique
+        </h3>
+
+        <p>
+            While initially requiring more interpretation than conventional x-y axis time series graphs, upon closer look, this visualization does have some rich insights derived from the spiral shape. First, the spiral shows the repeating pattern of seasons and helps prime our brains to see this data as ongoing and cyclical. The spiral shape of the graph makes it easy to compare the same month across different years. It also seems to show an increase in total cases from year to year, though this is harder to spot. You might think 2021 had more cases by comparing the thickness of the outer spiral to the inner spiral, but this could partly be because the outer circle is naturally bigger around.
+        </p>
+        <p>
+            The dotted axes and their labels are perfectly shown, since they don't crowd up the space while still providing context. The years (2020, 2021) are also easy to understand, particularly the arrows help the eye follow the shape to understand how things change over time. The legend is not super helpful because it's very difficult to compare its width with the different parts of the spiral, since they're oriented in various directions and not aligned. It's only able to give us a general affordance and context for the magnitude of the graph. It might have been interesting to show the width of the graph only on one side of the black spiral line to make the differences in width easier to see.
+        </p>
+        <p>
+            Before reading the article, I guessed the goal was the month-to-month comparisons since that would be the primary purpose of introducing the shape. However, that might've been better served stacking two graphs vertically or even showing two lines on the same graph. Only after reading the article could I understand it's meant to help the audience better understand how to think about predicting the spread of Omicron. In this case, it would've actually been much more helpful to focus on the shape of each spike side by side and remove all extraneous info. It might have also been helpful to show rough timeframes for each variant (although I understand the complexities that are involved, e.g. overlapping time frames, data inaccuracies, etc) since Omicron is much more transmissible than previous variants. While I don't think the graph aligned with the intent of the article, the spiral shape certainly makes it memorable and perhaps was used to grab the audience’s attention to read further.
+        </p>
+    </section>
+
+    <section>
+        <h2>Visualization Sketches</h2>
+
+  <figure>
+            <img src="/images/a3/sketch_1.jpeg" alt="" />
+            <figcaption>
+                  Covid spikes 2020-2022, with spikes highlighted
+            </figcaption>
+        </figure>
+
+        <h3>
+            Design Rationale for Sketch 1
+        </h3>
+
+        <ul>
+            <li>Maintained the spiral structure but used different shading to highlight the "spikes". Spikes can be determined via a few indicators, such as percentage increase over time or other more advanced epidemic curves.</li>
+            <li>Only showed width on one side of the spiral axis to help with comparability.</li>
+            <li>Introduced notches on the dotted axes to anchor the width to number of cases</li>
+            <li>Feels like the spiral is just a novelty now that we're focusing on the shape of each curve</li>
+        </ul>
+
+        <figure>
+            <img src="/images/a3/sketch_2.jpeg" alt="" />
+            <figcaption>
+                Covid spikes 2020-2022, with spikes normalized by month
+            </figcaption>
+        </figure>
+
+        <h3>
+            Design Rationale for Sketch 2:
+        </h3>
+
+        <ul>
+            <li>Similar to the first visualization, I focused on comparing the curves of each "spike", but normalized against each spike's time frame of month 1, 2, 3 instead of months of the year.</li>
+            <li>Can easily compare the shape and magnitude of each spike now that they're on the same graph</li>
+            <li>Introduced back the standard x-y axes to more precisely visualize the magnitude</li>
+            <li>Loses context of time of year, so information around holidays, travel, etc is lost. Could potentially include in the line labels (e.g. "Spike 1: June–Oct 2020)</li>
+        </ul>
+
+        <figure>
+            <img src="/images/a3/sketch_3.jpeg" alt="" />
+            <figcaption>
+                Covid cases by variant
+            </figcaption>
+        </figure>
+
+        <h3>
+            Design Rationale for Sketch 3:
+        </h3>
+
+        <ul>
+            <li>Thought it might be interesting to compare the spike curves of each variant instead of each spike, which would be a mix of variants (although typically dominated by one)</li>
+            <li>I separated out the curves into separate graphs to really isolate and focus on their shapes. The axes are also less granular for the same reason.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Final Visualization Design</h2>
+  
+        <figure>
+            <img src="/images/a3/final_vis.png" alt="" />
+            <figcaption>
+                Final visualization comparing Covid spikes by month. Created with Tableau and Figma.
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <section>
+        <h2>Design Process & Design Decisions</h2>
+
+        <h3>Design Critique</h3>
+        <p>
+            I focused my visualization on identifying Covid surge patterns, which aligned with the primary objective of the article. I did this by:
+        </p>
+        <ul>
+            <li>
+              <strong>Data smoothing:</strong> Calculated 7-day averages of case counts to eliminate minor fluctuations.
+            </li>
+            <li>
+              <strong>Inflection point detection:</strong> Identified "peaks" and "valleys" by identifying sign changes in the 7-day average's rate of change, marking transitions between growth and decline. I recognize this is not the most sophisticated measure, this method provided sufficiently clean segmentation.
+            </li>
+            <li>
+              <strong>Wave delineation:</strong> Visualized these inflection points alongside the daily case data, then visually determined threshold values.
+            </li>
+            <li>
+              <strong>Comparative visualization:</strong> Plotted a consolidated visualization displaying all four waves on a single graph so that we can directly compare their intensity, duration, and shape.
+            </li>
+          </ul>
+        <p>
+            My main design choices were:
+        </p>
+        <ul>
+            <li>
+              Using different colors to show the different waves.
+            </li>
+            <li>
+              Standardized the waves by aligning each wave at day zero of onset, which allows us to compare progression patterns independent of calendar dates. I implemented monthly interval markers (every 30 days) to provide the reference points that best aligns with the conventional monthly framing used in public health discussions of COVID-19 waves.
+            </li>
+            <li>
+              Because the time frame was standardized based on wave onset, I labeled each wave with its time frame (e.g. June '20 – Oct '20) to provide additional context.
+            </li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+            My final design addresses several key critiques I identified in the original spiral visualization, particularly by prioritizing clear comparison of wave patterns and eliminating the interpretive challenges posed by the spiral format. By normalizing the waves to a common starting point and using a standard cartesian graph, I aimed to improve data legibility and focused on the article's primary goal of understanding COVID surge patterns. However, this redesign definitely revealed tradeoffs, like the loss of seasonal context and introducing my own interpretation of a “wave”. The critique-by-redesign approach helped me recognize that no single visualization can perfectly communicate all dimensions of complex data. This process highlighted that effective data visualization often requires prioritizing certain analytical goals over others, and perhaps complementary visualizations may be sometimes necessary.
+        </p>
+    </section>
+</main>

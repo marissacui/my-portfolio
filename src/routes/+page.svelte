@@ -1,13 +1,5 @@
-<script>
-    let pages = [
-        { url: "/", title: "Home" },
-        { url: "/projects", title: "Projects" },
-        { url: "/resume", title: "Resume" },
-        { url: "/contact", title: "Contact" },
-    ];
-</script>
 <main>
-    <img src="images/main.svg" alt="Marissa Cui">
+    <img src="/images/main.svg" alt="Marissa Cui">
     <h1>Hey, I'm Marissa</h1>
 
     <p>

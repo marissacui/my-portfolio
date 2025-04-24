@@ -2,7 +2,7 @@
     <h2>Projects</h2>
     <ul>
         <li>
-            <a href="projects/a2" target="_blank"> A2: Exploratory Data Analysis</a>
+            <a href="projects/a2/" target="_blank"> A2: Exploratory Data Analysis</a>
         </li>
         <li>
             <a href="projects/a3/" target="_blank"> A3: Visualization Critique & Redesign</a>

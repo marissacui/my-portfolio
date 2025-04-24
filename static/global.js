@@ -24,6 +24,8 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;
 
+    console.log(location.host);
+
     if (a.host === location.host && a.pathname === location.pathname) {
         a.classList.add("current");
     }

@@ -7,14 +7,16 @@ function $$ (selector, context = document) {
 
 // ----- ADD NAV -----
 let pages = [
-    { url: "/my-portfolio/", title: "Home" },
-    { url: "/my-portfolio/projects/", title: "Projects" },
-    { url: "/my-portfolio/resume/", title: "Resume" },
-    { url: "/my-portfolio/contact/", title: "Contact" },
+    { url: ".", title: "Home" },
+    { url: "/projects", title: "Projects" },
+    { url: "/resume", title: "Resume" },
+    { url: "/contact", title: "Contact" },
 ];
 
 let nav = document.createElement("nav");
 document.body.append(nav);
+
+const ARE_WE_HOME = document.documentElement.classList.contains("home");
 
 for (let p of pages) {
     let url = p.url;

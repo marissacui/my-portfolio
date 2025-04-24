@@ -7,10 +7,10 @@ function $$ (selector, context = document) {
 
 // ----- ADD NAV -----
 let pages = [
-    { url: "/", title: "Home" },
-    { url: "/projects/", title: "Projects" },
-    { url: "/resume/", title: "Resume" },
-    { url: "/contact/", title: "Contact" },
+    { url: "/my-portfolio/", title: "Home" },
+    { url: "/my-portfolio/projects/", title: "Projects" },
+    { url: "/my-portfolio/resume/", title: "Resume" },
+    { url: "/my-portfolio/contact/", title: "Contact" },
 ];
 
 let nav = document.createElement("nav");

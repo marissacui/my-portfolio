@@ -157,7 +157,6 @@ h3 {
 }
 
 /* Lists */
-
 ul, ol {
 	padding-inline-start: 2em;
     font-family: var(--font-inter);
@@ -172,25 +171,25 @@ li {
 
 	+ li {
 		margin-top: .5em;
-	};
+	}
 }
 
-/* Sectioning elements */
-
+/* ------ BASIC ELEMENTS ------ */
 header {
 	padding-block: 1em;
 	text-align: center;
 }
-
 body {
 	padding: 5rem 2rem;
 }
-
 p {
     font-family: var(--font-inter);
     line-height: 1.3em;
 }
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -200,17 +199,74 @@ nav {
 	border-top: 1px solid var(--color-neutral-60);
 	padding: 1rem 0;
 }
-
+	.current {
+		color: var(--color-blue-20);
+		font-weight: 600;
+	}
 a {
 	font-family: var(--font-inter);
 	color: var(--color-blue-40);
 	text-decoration: none;
 }
 
-.current {
-	color: var(--color-blue-20);
-	font-weight: 600;
+ul.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+	list-style-type: none;
+	padding-inline-start: 0;
+	gap: 1em;
+	row-gap: 2em;
 }
+ul.projects li {
+	display: grid;
+	grid-template-rows: subgrid;
+	grid-row: span 3;
+}
+ul.projects article {
+	display: contents;
+
+}
+ul.projects article a {
+	display: contents;
+}
+ul.projects * {
+	margin: 0;
+}
+
+/* ------ FORM ------ */
+form {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1em;
+}
+form label, input, textarea, button { 
+	font-family: var(--font-inter);
+	font-size: 1em;
+	width: 100%;
+	box-sizing: border-box;
+	margin-block: .5em;
+}
+	form input, textarea, button {
+		padding: .5em;
+	}
+	form label {
+		margin-top: 1em;
+		display: grid;
+		grid-template-columns: subgrid;
+	}
+	form button {
+		grid-column: 1 / -1;
+		background-color: var(--color-blue-40);
+		border-style: none;
+		border-radius: 2px;
+		color: white;
+		padding: 2em auto;
+	}
+	form button:hover {
+		background-color: var(--color-blue-30);
+		cursor: pointer;
+	}
+
 
 /* Figures */
 

@@ -14,23 +14,25 @@
 </header>
 <main>
     <section>
-        <h2>Subtheme: Speculation</h2>
+        <article>
+            <h2>Subtheme: Speculation</h2>
 
-        <h3>Overall Analysis Questions</h3>
-        <ol>
-            <li>
-                <b>How do areas with higher investor activity relate to rates of tenant displacement or eviction filings over time?</b>
-                I’m interested in the triggers of tenant displacement and how it reshapes the neighborhood. It would be interesting to look at investor activity in various dimensions: number of purchases, flips, time it takes to flip, price difference between each sale, type of investor/buyer, and many more etc. All these dimensions have the potential to meaningfully impact the magnitude of displacement. I really enjoyed how the <a href="https://www.propublica.org/article/when-private-equity-becomes-your-landlord" target="_blank">ProPublica article</a> highlighted specific stories of renters, following their displacement from San Francisco to neighboring suburbs. This definitely resonates when I think about how much our rent went up in Manhattan right before we moved to Cambridge (by $1,000!) and how moving back after school definitely means we’ll be living in Brooklyn if we want a similar standard. By examining these metrics alongside displacement data, we could potentially map broader migration patterns of renters and better understand the cascading effects of investment patterns on community stability.
-            </li>
-            <li>
-                <b>What demographic and socioeconomic patterns emerge among displaced families?</b>
-                Building on the human narratives highlighted in the ProPublica article, I aim to develop a more comprehensive understanding of displacement's impact through aggregate data. A better understanding of the demographics, occupation, age, years lived in Boston, among other characteristics, would help humanize the stories, allowing us to better contextualize individual stories within broader community patterns. Combining this quantitative approach with the <a href="https://www.propublica.org/article/when-private-equity-becomes-your-landlord">ProPublica article’s</a> qualitative accounts could be a powerful way to show which communities bear the greatest burden and potentially revealing systemic patterns.
-            </li>
-            <li>
-                <b>How does absentee ownership manifest by neighborhood or by property value?</b>
-                While the <a href="https://apps.bostonglobe.com/2023/10/special-projects/spotlight-boston-housing/boston-towers-of-wealth/" target="_blank">Boston Globe article</a> focused primarily on absentee ownership in luxury developments, I'm interested in examining if this extends beyond high-end properties. I want to find ways to further quantify the impact of this phenomenon and get a sense of its scale (both in terms of absolute number and monetary value), prevalence (is it really only in high-luxury buildings), and impact (how much tax revenue is generated). This exploratory analysis might reveal unexpected patterns and generate new questions about how vacant properties affect Boston's housing ecosystem.
-            </li>
-        </ol>
+            <h3>Overall Analysis Questions</h3>
+            <ol>
+                <li>
+                    <b>How do areas with higher investor activity relate to rates of tenant displacement or eviction filings over time?</b>
+                    I’m interested in the triggers of tenant displacement and how it reshapes the neighborhood. It would be interesting to look at investor activity in various dimensions: number of purchases, flips, time it takes to flip, price difference between each sale, type of investor/buyer, and many more etc. All these dimensions have the potential to meaningfully impact the magnitude of displacement. I really enjoyed how the <a href="https://www.propublica.org/article/when-private-equity-becomes-your-landlord" target="_blank">ProPublica article</a> highlighted specific stories of renters, following their displacement from San Francisco to neighboring suburbs. This definitely resonates when I think about how much our rent went up in Manhattan right before we moved to Cambridge (by $1,000!) and how moving back after school definitely means we’ll be living in Brooklyn if we want a similar standard. By examining these metrics alongside displacement data, we could potentially map broader migration patterns of renters and better understand the cascading effects of investment patterns on community stability.
+                </li>
+                <li>
+                    <b>What demographic and socioeconomic patterns emerge among displaced families?</b>
+                    Building on the human narratives highlighted in the ProPublica article, I aim to develop a more comprehensive understanding of displacement's impact through aggregate data. A better understanding of the demographics, occupation, age, years lived in Boston, among other characteristics, would help humanize the stories, allowing us to better contextualize individual stories within broader community patterns. Combining this quantitative approach with the <a href="https://www.propublica.org/article/when-private-equity-becomes-your-landlord">ProPublica article’s</a> qualitative accounts could be a powerful way to show which communities bear the greatest burden and potentially revealing systemic patterns.
+                </li>
+                <li>
+                    <b>How does absentee ownership manifest by neighborhood or by property value?</b>
+                    While the <a href="https://apps.bostonglobe.com/2023/10/special-projects/spotlight-boston-housing/boston-towers-of-wealth/" target="_blank">Boston Globe article</a> focused primarily on absentee ownership in luxury developments, I'm interested in examining if this extends beyond high-end properties. I want to find ways to further quantify the impact of this phenomenon and get a sense of its scale (both in terms of absolute number and monetary value), prevalence (is it really only in high-luxury buildings), and impact (how much tax revenue is generated). This exploratory analysis might reveal unexpected patterns and generate new questions about how vacant properties affect Boston's housing ecosystem.
+                </li>
+            </ol>
+        </article>
     </section>
 
     <section>

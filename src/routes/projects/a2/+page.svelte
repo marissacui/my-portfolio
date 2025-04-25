@@ -40,7 +40,7 @@
 
         <figure>
             <h3>Understanding the variables</h3>
-            <img src="/images/a2/fig1.png" alt="" />
+            <img src="../../images/a2/fig1.png" alt="" />
             <figcaption>
                 As a first step, I looked through the tabular data without any visualizations to get familiar with the data types. The first thing I noticed was the large range of `proptypes` spanned across residential, commercial, and public use. For this analysis, I focused on residential real estate by selecting specific property types that represent spaces where people live: apartments (APT), single-family homes (R1F), two-family homes (R2F), three-family homes (R3F), condominiums (RCD), and foreclosed properties (REO). These categories capture apartments, single-family, multi-family, condos, and foreclosures—basically all the places people actually call “home”. I also removed one outlier property classified as R25, as it was a single instance and not a flipped property, which helped streamline subsequent visualizations without losing meaningful information about residential housing patterns.
             </figcaption>
@@ -48,7 +48,7 @@
 
         <figure>
             <h3>Price distribution</h3>
-            <img src="/images/a2/fig2.png" alt="" />
+            <img src="../../images/a2/fig2.png" alt="" />
             <figcaption>
                 Next, I visualized the price distribution to reveal an extreme right skew in residential property sales. While most transactions fell within a more modest range, the distribution featured a remarkable long tail extending beyond $30 million. While I suspected that some of the high value properties were commercial properties that might’ve slipped through, a few Google searches revealed that many were in fact residential.
             </figcaption>
@@ -56,7 +56,7 @@
 
         <figure>
             <h3>Price distribution excluding outliers</h3>
-            <img src="/images/a2/fig3.png" alt="" />
+            <img src="../../images/a2/fig3.png" alt="" />
             <figcaption>
                 Given that my research questions focus on understanding tenant displacement, I decided to exclude the top 5% of properties by price (leaving us to look at properties at $3.8M and below) to further streamline the data and better focus on the market segments where displacement most likely occurs. While ultra-luxury properties are an important part of Boston's real estate landscape and may have interactions with the rest of the market, I believe excluding them from this part of the analysis is justified. This filtering approach allows for a more targeted analysis of the housing market segment where investment patterns most directly impact community stability and affordability.
 

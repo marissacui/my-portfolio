@@ -1,5 +1,5 @@
 <main>
-    <img src="/images/main.svg" alt="Marissa Cui">
+    <img src="./images/main.svg" alt="Marissa Cui">
     <h1>Hey, I'm Marissa</h1>
 
     <p>

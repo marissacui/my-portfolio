@@ -28,7 +28,7 @@
             </h3>
 
             <figure>
-                <img src="/images/a4/vis_a.png" alt="" />
+                <img src="../images/a4/vis_a.png" alt="" />
             </figure>
 
             <h3>
@@ -77,7 +77,7 @@
             </h3>
 
             <figure>
-                <img src="/images/a4/vis_b.png" alt="" />
+                <img src="../images/a4/vis_b.png" alt="" />
             </figure>
 
             <h3>

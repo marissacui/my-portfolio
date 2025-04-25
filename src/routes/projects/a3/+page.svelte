@@ -51,7 +51,7 @@
             <h2>Visualization Sketches</h2>
 
             <figure>
-                <img src="/images/a3/sketch_1.jpeg" alt="" />
+                <img src="../images/a3/sketch_1.jpeg" alt="" />
                 <figcaption>
                     Covid spikes 2020-2022, with spikes highlighted
                 </figcaption>
@@ -69,7 +69,7 @@
             </ul>
 
             <figure>
-                <img src="/images/a3/sketch_2.jpeg" alt="" />
+                <img src="../images/a3/sketch_2.jpeg" alt="" />
                 <figcaption>
                     Covid spikes 2020-2022, with spikes normalized by month
                 </figcaption>
@@ -87,7 +87,7 @@
             </ul>
 
             <figure>
-                <img src="/images/a3/sketch_3.jpeg" alt="" />
+                <img src="../images/a3/sketch_3.jpeg" alt="" />
                 <figcaption>
                     Covid cases by variant
                 </figcaption>
@@ -107,7 +107,7 @@
             <h2>Final Visualization Design</h2>
     
             <figure>
-                <img src="/images/a3/final_vis.png" alt="" />
+                <img src="../images/a3/final_vis.png" alt="" />
                 <figcaption>
                     Final visualization comparing Covid spikes by month. Created with Tableau and Figma.
                 </figcaption>

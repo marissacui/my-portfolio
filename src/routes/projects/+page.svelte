@@ -7,7 +7,7 @@
         <ul class="projects">
             <li>
                 <article>
-                    <a href="./a2" target="_blank">
+                    <a href="./projects/a2" target="_blank">
                         <h3>A2: Exploratory Data Analysis</h3>
                         <img src="./images/projects/preview_a2.png" alt="" />
                     </a>
@@ -16,7 +16,7 @@
             </li>
             <li>                
                 <article>
-                    <a href="./a3" target="_blank">
+                    <a href="./projects/a3" target="_blank">
                         <h3>A3: Visualization Critique & Redesign</h3>
                         <img src="./images/projects/preview_a3.png" alt="" />
                     </a>
@@ -25,7 +25,7 @@
             </li>
             <li>
                 <article>
-                    <a href="./a4" target="_blank">
+                    <a href="./projects/a4" target="_blank">
                         <h3>A4: Persuasive or Deceptive Visualization</h3>
                         <img src="./images/projects/preview_a4.png" alt="" />
                     </a>
